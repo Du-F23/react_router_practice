@@ -12,6 +12,7 @@ var info = [
         genero: 'Masculino',
         carrera: 'Ingenieria en Sistemas Computacionales',
         universidad: 'Universidad Tecnologica del Valle de Toluca',
+        pdf: 'https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf',
     },
     {
         id: '02',
@@ -23,6 +24,7 @@ var info = [
         genero: 'Masculino',
         carrera: 'Ingenieria en Sistemas Computacionales',
         universidad: 'Universidad Tecnologica del Valle de Toluca',
+        pdf: 'https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf',
     },
     {
         id: '03',
@@ -34,6 +36,7 @@ var info = [
         genero: 'Femenino',
         carrera: 'Ingenieria en Redes',
         universidad: 'Universidad Tecnologica del Valle de Toluca',
+        pdf: 'https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf',
     }
 ];
 

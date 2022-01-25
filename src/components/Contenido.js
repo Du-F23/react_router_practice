@@ -6,7 +6,7 @@ export default class Contenido extends React.Component {
             <div>
                 <h3>Contenido recorriendo información</h3>
                 <br/>
-                {this.props.info.map((item, i) => {
+                {this.props.info.map((item) => {
                     return(
                         <div className="row">
                     <div className="col-md-12">
