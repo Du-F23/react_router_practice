@@ -1,7 +1,8 @@
 import React from "react";
 import Menu from "../routes/Menu";
+import Contenido from "./Contenido";
 
-var info = [
+var item = [
     {
         id: '01',
         matricula: '222010329',
@@ -49,6 +50,10 @@ export default class Datos3 extends React.Component{
                 <Menu/>
                 <h3>Datos desde un array</h3>
 
+              <div>
+                <Contenido info={item}/>
+              </div>
+                
             </div>
 
         )
