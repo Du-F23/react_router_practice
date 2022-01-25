@@ -6,6 +6,7 @@ import Datos0 from "../components/Datos00";
 import Datos1 from "../components/Datos01";
 import Datos2 from "../components/Datos02";
 import Error from "../components/Error";
+import Credential from "../components/Credencial";
 
 export default class Routers extends React.Component {
   render() {
@@ -16,6 +17,7 @@ export default class Routers extends React.Component {
           <Route exact path="/datos00" element={<Datos0 />} />
           <Route exact path="/datos01" element={<Datos1 />} />
           <Route exact path="/datos02" element={<Datos2 />} />
+          <Route exact path="/credential" element={<Credential />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
