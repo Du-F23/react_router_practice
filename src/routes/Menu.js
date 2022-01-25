@@ -10,6 +10,7 @@ export default class Menu extends React.Component {
       <li><Link to="/datos00">Datos00</Link></li>
       <li><Link to="/datos01">Datos01</Link></li>
       <li><Link to="/datos02">Datos02</Link></li>
+      <li><Link to="/datos03">Datos03</Link></li>
 </ul>
       </div>
     );
