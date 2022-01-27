@@ -1,40 +1,37 @@
 import React from "react";
-import img from "../img/images.png";
+import img1 from "../img/images.png"
+export default class Contenido2 extends React.Component {
 
-export default class Contenido2 extends React.Component{
-
-constructor(props){
-    super(props);
-    this.state = {
-        img: img,
-        pdf: 'https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf',
-        texto:'Texto mandado a traer desde el constructor',
-        datos: 'Datos mandados a traer desde el constructor',
+    constructor(props) {
+        super(props);
+        this.state={
+            img: img1,
+            pdf: 'http://www.africau.edu/images/default/sample.pdf',
+            fecha: '----------',
+            nombre: 'FOOBAR'
+        }
     }
-}
+    componentDidMount() {
+        setTimeout(()=>{
+            this.setState({
+                img: this.props.img,
+                pdf: this.props.pdf,
+                fecha: this.props.fecha,
+                nombre: this.props.nombre,
+            })
+        },5000)
+    }
 
-componentDidMount(){
-    setTimeout(() => {
-this.setState({
-    img: this.props.img,
-    pdf: this.props.pdf,
-    texto: this.props.texto,
-    datos: this.props.datos,
-},5000)
-    })
-}
+    render() {
+        const {img, pdf, nombre, fecha} = this.state
+        return (<div>
 
-    render(){
-        const {img, pdf, texto, datos} = this.state
-        return(
-            <div>
-                <h3>Contenido 2</h3>
-                <img src={img} alt="Imagen Props"/>
-                <a href={pdf}><button className="btn btn-outline-success">UTVT</button></a>
-                <hr/>
-                {texto}
-                {datos}
-            </div>
-        )
+            <h3>Componenete - Contenido 04</h3>
+            <img src={img} style={{height: '150px'}}/>
+            <a href={pdf} alt="Hola">Archivo de descarga PDF</a>
+            <p> {nombre}</p>
+            <p>{fecha}</p>
+            <hr/>
+        </div>)
     }
 }
