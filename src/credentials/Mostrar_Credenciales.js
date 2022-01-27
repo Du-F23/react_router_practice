@@ -31,6 +31,8 @@ export default class Mostrar extends React.Component {
                         Descarga
                       </button>
                     </a>
+                    <br/>
+                    <br/>
                   </div>
                 </div>
               </div>
