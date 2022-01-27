@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../img/cuervi.jpeg";
+import img1 from "../img/images.png";
 
 export default class Contenido2 extends React.Component{
 
