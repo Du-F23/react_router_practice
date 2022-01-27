@@ -1,6 +1,8 @@
 import React from "react";
+import './css/style.css';
 
-export default class Contenido extends React.Component {
+
+export default class Mostrar extends React.Component {
   render() {
     return (
       <div>
@@ -8,10 +10,12 @@ export default class Contenido extends React.Component {
         <br />
         {this.props.info.map((item) => {
           return (
-            <div className="row">
+            <div className="row" >
               <div className="col-md-12">
-                <div className="card">
-                  <img src={item.img} alt="Imagen del cuervo" />
+                <div className="card" alignContent="flex-end">
+                  <p>
+                  <img src={item.img} alt="Imagen del cuervo" width="20%" id="imagen" className="grid-info"/>
+                  </p>
                   <div className="card-body">
                     <h5 className="card-title">
                       {item.id}:{item.name}
@@ -37,3 +41,4 @@ export default class Contenido extends React.Component {
     );
   }
 }
+
