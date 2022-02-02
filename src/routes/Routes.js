@@ -12,6 +12,7 @@ import Error from "../components/Error";
 import Credential from "../components/Credencial";
 import Datos from "../credentials/Datos_credenciales";
 import Contenido2 from "../components/Contenido2";
+import Card from "../credentials/Credential_Profesor";
 
 export default class Routers extends React.Component {
   render() {
@@ -26,6 +27,7 @@ export default class Routers extends React.Component {
           <Route exact path="/datos04" element={<Datos4 />} />
           <Route exact path="/datos05" element={<Datos5 />} />
           <Route exact path="/credential" element={<Credential />} />
+          <Route exact path="/card" element={<Card/>}/>
           <Route exact path="/mostrar_credenciales" element={<Datos />} />
           <Route exact path="/contenido2" element={<Contenido2 />} />
           <Route path="*" element={<Error />} />

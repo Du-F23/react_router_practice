@@ -43,7 +43,9 @@ export default class Contenido3 extends React.Component {
 
             <h3>Credencial - Contenido 3</h3>
 
-
+            
+            <hr/>
+            <br/>
             <div className="card" alignContent="flex-end">
             <img src={img} style={{height: '150px'}} id="imagen" className="grid-info"/>
             <div className="card-body">
@@ -59,7 +61,6 @@ export default class Contenido3 extends React.Component {
             <a href={pdf} alt="Hola"><button className="button is-primary is-dark">Archivo de descarga PDF</button></a>
             </div>
             </div>
-            <hr/>
             <hr/>
         </div>)
     }
