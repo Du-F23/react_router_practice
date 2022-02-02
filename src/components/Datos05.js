@@ -3,7 +3,7 @@ import Menu from "../routes/Menu";
 import Contenido3 from "./Contenido3";
 import img1 from "../img/images.png"
 
-
+//Declaramos los datos que seran enviados a Contenido3
 var id='01';
 var img= img1;
 var name= 'Fernando Duarte Villavicencio';

@@ -2,10 +2,11 @@ import React from "react";
 import '../css/style.css';
 
 export default class Contenido3 extends React.Component {
-
+//La informacion de datos 5 es mandada aquí y con el constructor le ordenamos que hacer, 
     constructor(props) {
         super(props);
         this.state={
+          //Son datos que se van a componente primero y se actualizaran despues
             id: 'undefined',
             img: 'https://via.placeholder.com/150',
             name: 'undefined',
@@ -19,6 +20,7 @@ export default class Contenido3 extends React.Component {
             pdf: 'http://www.africau.edu/images/default/sample.pdf',
         }
     }
+  //Aquí le decimos que campo pertene a cada uno y con setTimeout le damos el tiempo que tarda en actualizar los datos
     componentDidMount() {
         setTimeout(()=>{
             this.setState({
